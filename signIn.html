@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/signIn.css">
+    <title>SignIn</title>
+</head>
+
+<body>
+    <form action="Results.html" method="get" target="_parent">
+        <img src="/navlogo.jpg" alt="" />
+        <h1>SignIn Form</h1>
+
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" value="first name" name="First Name" placeholder="your first name here"
+            onkeyup="fname_validate()" />
+        <span id="fname_msg"></span>
+        <br />
+
+        <label for="midname">Middle Name:</label>
+        <input type="text" id="midname" name="Middle Name" placeholder="your middle name here" />
+        <br />
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" placeholder="your last name here" />
+
+        <br />
+
+        <label for="gender">Gender: </label>
+
+        <input type="radio" id="m" name="gender" />
+        <label for="m">Male</label>
+
+        <input type="radio" id="f" name="gender" />
+        <label for="f">Female</label>
+
+        <input type="radio" id="o" name="gender" />
+        <label for="o">Others</label>
+
+        <br />
+
+        <label for="genere">Genere: </label>
+        <input type="checkbox" name="Pop" id="pop" />
+        <label for="pop">Pop</label>
+
+        <input type="checkbox" name="Rock" id="rock" />
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" name="Classic" id="classic" />
+        <label for="classic">Classic</label>
+
+        <br />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="age here" value="18" min="15" max="30" step="3" />
+
+        <br />
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" value="date of birth" min="2023-12-15" />
+
+        <br />
+
+        <label for="add">Address</label>
+        <select name="" id="add">
+            <option value="">Bhaktpur</option>
+            <option value="">Kathmandu</option>
+            <option value="">Rautahat</option>
+            <option value="">Pokhara</option>
+        </select>
+
+        <br />
+
+        <label for="email">Email Address: </label>
+        <input type="text" id="email" placeholder="your email address" autocomplete="on" value="email address"
+            onkeyup="email_validate()" />
+        <span id="email_msg"></span>
+
+        <br />
+
+        <label for="phone">Phone No :</label>
+        <select name="">
+            <option value="">977</option>
+            <option value="">978</option>
+            <option value="">979</option>
+            <option value="">980</option>
+            <option value="">981</option>
+            <option value="">982</option>
+            <option value="">983</option>
+        </select>
+        <input type="text" placeholder="98480****" onkeyup="phoneval()" id="phone" />
+        <span id="phonemsg"></span>
+        <br />
+
+        <label for="pwd">Password: </label>
+        <input type="text" id="pwd" placeholder="your password here" onkeyup="password()" />
+        <span id="pwd_msg"></span>
+        <br />
+
+        <label for="desc">About<br /></label>
+        <textarea name="" id="desc" cols="30" rows="10" maxlength="250"></textarea>
+
+        <br />
+
+        <input type="reset" />
+        <input type="submit" />
+        <button>Register</button>
+    </form>
+    <script src="../JS/FormValidn.js"></script>
+</body>
+
+</html>
